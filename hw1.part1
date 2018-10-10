@@ -1,0 +1,300 @@
+Script started on 2018-10-09 15:51:28-0400
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ echo "Hello world"
+Hello world
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ passwd -q manny
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ date
+Tue Oct  9 15:52:12 EDT 2018
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ echo $HOME
+/home/manny
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ cd ~
+]0;manny@manny-MacBookPro: ~[01;32mmanny@manny-MacBookPro[00m:[01;34m~[00m$ ls
+[0m[01;34manaconda3[0m  [01;34mIdeaProjects[0m  secretfile       Untitled.ipynb
+[01;34mDesktop[0m    [01;34mMusic[0m         [01;34msnap[0m             [01;34mVideos[0m
+[01;34mDocuments[0m  [01;34mPictures[0m      [01;34mTemplates[0m
+[01;34mDownloads[0m  [01;34mPublic[0m        Untitled1.ipynb
+]0;manny@manny-MacBookPro: ~[01;32mmanny@manny-MacBookPro[00m:[01;34m~[00m$ mkdir temp
+]0;manny@manny-MacBookPro: ~[01;32mmanny@manny-MacBookPro[00m:[01;34m~[00m$ mv temp/ files/
+]0;manny@manny-MacBookPro: ~[01;32mmanny@manny-MacBookPro[00m:[01;34m~[00m$ cd files/
+]0;manny@manny-MacBookPro: ~/files[01;32mmanny@manny-MacBookPro[00m:[01;34m~/files[00m$ date > now
+]0;manny@manny-MacBookPro: ~/files[01;32mmanny@manny-MacBookPro[00m:[01;34m~/files[00m$ mv [K[K[Kcp now before
+]0;manny@manny-MacBookPro: ~/files[01;32mmanny@manny-MacBookPro[00m:[01;34m~/files[00m$ ls -al
+total 16
+drwxr-xr-x  2 manny manny 4096 Oct  9 15:53 [0m[01;34m.[0m
+drwxr-xr-x 32 manny manny 4096 Oct  9 15:52 [01;34m..[0m
+-rw-r--r--  1 manny manny   29 Oct  9 15:53 before
+-rw-r--r--  1 manny manny   29 Oct  9 15:52 now
+]0;manny@manny-MacBookPro: ~/files[01;32mmanny@manny-MacBookPro[00m:[01;34m~/files[00m$ touch temp
+]0;manny@manny-MacBookPro: ~/files[01;32mmanny@manny-MacBookPro[00m:[01;34m~/files[00m$ mv temp temp [K[K[Kst
+]0;manny@manny-MacBookPro: ~/files[01;32mmanny@manny-MacBookPro[00m:[01;34m~/files[00m$ cd ..
+]0;manny@manny-MacBookPro: ~[01;32mmanny@manny-MacBookPro[00m:[01;34m~[00m$ rm -r files/
+]0;manny@manny-MacBookPro: ~[01;32mmanny@manny-MacBookPro[00m:[01;34m~[00m$ cd ~/Desktop/TechField/Assignments
+s/Prof[Kgramming/
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ echo "It's a secret!" > secretfile
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ chmod 333 secretfile 
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ ls -al secretfile 
+--wx-wx-wx 1 manny manny 15 Oct  9 15:54 [0m[01;32msecretfile[0m
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ cat secretfile 
+cat: secretfile: Permission denied
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ uname -v
+#39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ uname -s
+Linux
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ ps -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 15:03 ?        00:00:06 /sbin/init 
+root         2     0  0 15:03 ?        00:00:00 [kthreadd]
+root         4     2  0 15:03 ?        00:00:00 [kworker/0:
+root         6     2  0 15:03 ?        00:00:00 [mm_percpu_
+root         7     2  0 15:03 ?        00:00:00 [ksoftirqd/
+root         8     2  0 15:03 ?        00:00:03 [rcu_sched]
+root         9     2  0 15:03 ?        00:00:00 [rcu_bh]
+root        10     2  0 15:03 ?        00:00:00 [migration/
+root        11     2  0 15:03 ?        00:00:00 [watchdog/0
+root        12     2  0 15:03 ?        00:00:00 [cpuhp/0]
+root        13     2  0 15:03 ?        00:00:00 [cpuhp/1]
+root        14     2  0 15:03 ?        00:00:00 [watchdog/1
+root        15     2  0 15:03 ?        00:00:00 [migration/
+root        16     2  0 15:03 ?        00:00:00 [ksoftirqd/
+root        18     2  0 15:03 ?        00:00:00 [kworker/1:
+root        19     2  0 15:03 ?        00:00:00 [cpuhp/2]
+root        20     2  0 15:03 ?        00:00:00 [watchdog/2
+root        21     2  0 15:03 ?        00:00:00 [migration/
+root        22     2  0 15:03 ?        00:00:00 [ksoftirqd/
+root        24     2  0 15:03 ?        00:00:00 [kworker/2:
+root        25     2  0 15:03 ?        00:00:00 [cpuhp/3]
+root        26     2  0 15:03 ?        00:00:00 [watchdog/3
+root        27     2  0 15:03 ?        00:00:00 [migration/
+root        28     2  0 15:03 ?        00:00:00 [ksoftirqd/
+root        30     2  0 15:03 ?        00:00:00 [kworker/3:
+root        31     2  0 15:03 ?        00:00:00 [kdevtmpfs]
+root        32     2  0 15:03 ?        00:00:00 [netns]
+root        33     2  0 15:03 ?        00:00:00 [rcu_tasks_
+root        34     2  0 15:03 ?        00:00:00 [kauditd]
+root        36     2  0 15:03 ?        00:00:00 [kworker/1:
+root        38     2  0 15:03 ?        00:00:00 [kworker/3:
+root        39     2  0 15:03 ?        00:00:00 [khungtaskd
+root        40     2  0 15:03 ?        00:00:00 [oom_reaper
+root        41     2  0 15:03 ?        00:00:00 [writeback]
+root        42     2  0 15:03 ?        00:00:00 [kcompactd0
+root        43     2  0 15:03 ?        00:00:00 [ksmd]
+root        44     2  0 15:03 ?        00:00:00 [khugepaged
+root        45     2  0 15:03 ?        00:00:00 [crypto]
+root        46     2  0 15:03 ?        00:00:00 [kintegrity
+root        47     2  0 15:03 ?        00:00:00 [kblockd]
+root        48     2  0 15:03 ?        00:00:00 [ata_sff]
+root        49     2  0 15:03 ?        00:00:00 [md]
+root        50     2  0 15:03 ?        00:00:00 [edac-polle
+root        51     2  0 15:03 ?        00:00:00 [devfreq_wq
+root        52     2  0 15:03 ?        00:00:00 [watchdogd]
+root        55     2  0 15:03 ?        00:00:00 [kswapd0]
+root        56     2  0 15:03 ?        00:00:00 [ecryptfs-k
+root        98     2  0 15:03 ?        00:00:00 [kthrotld]
+root        99     2  0 15:03 ?        00:00:00 [acpi_therm
+root       104     2  0 15:03 ?        00:00:00 [ipv6_addrc
+root       113     2  0 15:03 ?        00:00:00 [kstrp]
+root       123     2  0 15:03 ?        00:00:00 [kworker/3:
+root       135     2  0 15:03 ?        00:00:00 [charger_ma
+root       183     2  0 15:03 ?        00:00:00 [irq/17-mmc
+root       184     2  0 15:03 ?        00:00:00 [scsi_eh_0]
+root       185     2  0 15:03 ?        00:00:00 [scsi_tmf_0
+root       186     2  0 15:03 ?        00:00:00 [scsi_eh_1]
+root       187     2  0 15:03 ?        00:00:00 [scsi_tmf_1
+root       188     2  0 15:03 ?        00:00:00 [scsi_eh_2]
+root       189     2  0 15:03 ?        00:00:00 [scsi_tmf_2
+root       190     2  0 15:03 ?        00:00:00 [scsi_eh_3]
+root       191     2  0 15:03 ?        00:00:00 [scsi_tmf_3
+root       192     2  0 15:03 ?        00:00:00 [scsi_eh_4]
+root       193     2  0 15:03 ?        00:00:00 [scsi_tmf_4
+root       194     2  0 15:03 ?        00:00:00 [scsi_eh_5]
+root       195     2  0 15:03 ?        00:00:00 [scsi_tmf_5
+root       197     2  0 15:03 ?        00:00:00 [firewire]
+root       201     2  0 15:03 ?        00:00:00 [firewire_o
+root       202     2  0 15:03 ?        00:00:00 [kworker/u9
+root       203     2  0 15:03 ?        00:00:00 [i915/signa
+root       204     2  0 15:03 ?        00:00:00 [i915/signa
+root       205     2  0 15:03 ?        00:00:00 [i915/signa
+root       210     2  0 15:03 ?        00:00:00 [kworker/0:
+root       212     2  0 15:03 ?        00:00:00 [kworker/2:
+root       234     2  0 15:03 ?        00:00:00 [jbd2/sda4-
+root       235     2  0 15:03 ?        00:00:00 [ext4-rsv-c
+root       274     1  0 15:03 ?        00:00:00 /lib/system
+root       300     1  0 15:03 ?        00:00:00 /lib/system
+root       341     2  0 15:03 ?        00:00:00 [kworker/3:
+root       345     2  0 15:03 ?        00:00:00 [kworker/u9
+root       364     2  0 15:03 ?        00:00:00 [irq/45-mei
+root       368     2  0 15:03 ?        00:00:00 [kworker/0:
+root       373     2  0 15:03 ?        00:00:00 [kworker/1:
+root       379     2  0 15:03 ?        00:00:00 [cfg80211]
+root       406     2  0 15:03 ?        00:00:00 [wl_event_h
+root       561     2  0 15:03 ?        00:00:00 [loop0]
+root       574     2  0 15:03 ?        00:00:00 [loop1]
+root       580     2  0 15:03 ?        00:00:00 [loop2]
+root       582     2  0 15:03 ?        00:00:00 [loop3]
+root       585     2  0 15:03 ?        00:00:00 [applesmc-l
+root       588     2  0 15:03 ?        00:00:00 [loop4]
+root       589     2  0 15:03 ?        00:00:00 [loop5]
+root       593     2  0 15:03 ?        00:00:00 [loop6]
+root       594     2  0 15:03 ?        00:00:00 [loop7]
+root       595     2  0 15:03 ?        00:00:00 [loop8]
+root       596     2  0 15:03 ?        00:00:00 [loop9]
+root       597     2  0 15:03 ?        00:00:00 [loop10]
+root       599     2  0 15:03 ?        00:00:00 [loop11]
+root       601     2  0 15:03 ?        00:00:00 [loop12]
+root       619     2  0 15:03 ?        00:00:00 [loop13]
+systemd+   620     1  0 15:03 ?        00:00:00 /lib/system
+systemd+   621     1  0 15:03 ?        00:00:02 /lib/system
+root       714     1  0 15:03 ?        00:00:00 /usr/sbin/c
+root       716     1  0 15:03 ?        00:00:00 /usr/sbin/t
+root       721     1  0 15:03 ?        00:00:00 /usr/sbin/i
+root       722     1  0 15:03 ?        00:00:00 /usr/lib/ac
+root       726     1  0 15:03 ?        00:00:00 /usr/sbin/a
+root       731     1  0 15:03 ?        00:00:00 /usr/lib/x8
+root       737     1  0 15:03 ?        00:00:00 /usr/lib/ud
+root       739     1  0 15:03 ?        00:00:00 /lib/system
+message+   744     1  0 15:03 ?        00:00:02 /usr/bin/db
+root       764     1  0 15:03 ?        00:00:06 /usr/sbin/N
+root       765     1  0 15:03 ?        00:00:00 /sbin/wpa_s
+root       766     1  0 15:03 ?        00:00:00 /usr/bin/py
+root       767     1  0 15:03 ?        00:00:00 /usr/lib/bl
+root       768     1  0 15:03 ?        00:00:02 /usr/sbin/i
+avahi      769     1  0 15:03 ?        00:00:00 avahi-daemo
+avahi      778   769  0 15:03 ?        00:00:00 avahi-daemo
+syslog     781     1  0 15:03 ?        00:00:00 /usr/sbin/r
+root       783     1  0 15:03 ?        00:00:00 /usr/sbin/M
+root       794     1  0 15:03 ?        00:00:02 /usr/lib/sn
+root       818     1  0 15:03 ?        00:00:01 /usr/lib/po
+root       849     1  0 15:03 ?        00:00:00 /usr/sbin/g
+root       866   849  0 15:03 ?        00:00:00 gdm-session
+manny      875     1  0 15:03 ?        00:00:00 /lib/system
+manny      876   875  0 15:03 ?        00:00:00 (sd-pam)
+manny      889     1  0 15:03 ?        00:00:00 /usr/bin/gn
+manny      893   866  0 15:03 tty1     00:00:00 /usr/lib/gd
+manny      895   893  2 15:03 tty1     00:01:38 /usr/lib/xo
+manny      921   875  0 15:03 ?        00:00:00 /usr/bin/db
+manny      924   893  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1024   924  0 15:03 ?        00:00:00 /usr/bin/ss
+manny     1026   875  0 15:03 ?        00:00:00 /usr/lib/at
+manny     1032  1026  0 15:03 ?        00:00:00 /usr/bin/db
+manny     1034   875  0 15:03 ?        00:00:01 /usr/lib/at
+manny     1052   924  4 15:03 tty1     00:02:43 /usr/bin/gn
+root      1058     1  0 15:03 ?        00:00:00 /usr/lib/up
+manny     1092   875  0 15:03 ?        00:00:00 /usr/lib/gv
+manny     1097   875  0 15:03 ?        00:00:00 /usr/lib/gv
+manny     1108     1  0 15:03 ?        00:00:08 /usr/bin/pu
+rtkit     1109     1  0 15:03 ?        00:00:00 /usr/lib/rt
+root      1116     2  0 15:03 ?        00:00:00 [krfcommd]
+manny     1126  1052  0 15:03 tty1     00:00:12 ibus-daemon
+manny     1130  1126  0 15:03 tty1     00:00:00 /usr/lib/ib
+manny     1132     1  0 15:03 tty1     00:00:00 /usr/lib/ib
+manny     1135   875  0 15:03 ?        00:00:00 /usr/lib/ib
+manny     1145   875  0 15:03 ?        00:00:00 /usr/lib/gn
+manny     1149   875  0 15:03 ?        00:00:00 /usr/lib/ev
+manny     1157   875  0 15:03 ?        00:00:00 /usr/lib/gn
+manny     1167   875  0 15:03 ?        00:00:00 /usr/lib/gn
+manny     1175   875  0 15:03 ?        00:00:00 /usr/lib/gv
+manny     1179   875  0 15:03 ?        00:00:00 /usr/lib/gv
+manny     1183   875  0 15:03 ?        00:00:00 /usr/lib/gv
+manny     1187   875  0 15:03 ?        00:00:00 /usr/lib/gv
+manny     1192   875  0 15:03 ?        00:00:00 /usr/lib/gv
+root      1196     1  0 15:03 ?        00:00:17 /usr/lib/pa
+manny     1201   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1203   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1204   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1206   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1207   924  0 15:03 tty1     00:00:01 /usr/lib/gn
+manny     1215   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1216   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1217   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1227   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1234   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1236   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1239   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1241   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1243   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1246   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1251   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1259   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+colord    1282     1  0 15:03 ?        00:00:00 /usr/lib/co
+manny     1284     1  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1307   924  0 15:03 tty1     00:00:00 /usr/lib/gn
+manny     1309   924  0 15:03 tty1     00:00:06 /usr/bin/gn
+manny     1318   924  0 15:03 tty1     00:00:01 nautilus-de
+manny     1325     1  0 15:03 tty1     00:00:09 /usr/share/
+manny     1337  1092  0 15:03 ?        00:00:00 /usr/lib/gv
+root      1342   764  0 15:03 ?        00:00:00 /sbin/dhcli
+manny     1351  1325  0 15:03 tty1     00:00:00 /usr/share/
+manny     1359   875  0 15:03 ?        00:00:00 /usr/lib/ev
+manny     1361   875  0 15:03 ?        00:00:00 /usr/lib/dc
+manny     1440  1359  0 15:03 ?        00:00:00 /usr/lib/ev
+manny     1441  1126  0 15:03 tty1     00:00:04 /usr/lib/ib
+manny     1453   875  0 15:03 ?        00:00:00 /usr/lib/ev
+manny     1467  1453  0 15:03 ?        00:00:00 /usr/lib/ev
+manny     1484   875  0 15:03 ?        00:00:00 /usr/lib/x8
+manny     1509  1325  0 15:03 tty1     00:00:01 /usr/share/
+whoopsie  1513     1  0 15:03 ?        00:00:00 /usr/bin/wh
+kernoops  1514     1  0 15:03 ?        00:00:00 /usr/sbin/k
+kernoops  1517     1  0 15:03 ?        00:00:00 /usr/sbin/k
+root      1519   764  0 15:03 ?        00:00:00 /sbin/dhcli
+manny     1561  1351  0 15:03 tty1     00:00:21 /usr/share/
+manny     1572   875  0 15:03 ?        00:00:00 /usr/lib/gv
+root      1710     1  0 15:03 ?        00:00:00 /usr/lib/fw
+root      2356     2  0 15:04 ?        00:00:00 [kworker/0:
+manny     3187   924  0 15:04 tty1     00:00:00 update-noti
+manny     3360   875  0 15:04 ?        00:00:20 /usr/lib/gn
+manny     3460  3360  0 15:04 pts/1    00:00:00 bash
+manny     6011   875  8 15:06 ?        00:04:28 /usr/lib/fi
+root      6424     1  0 15:08 ?        00:00:00 /usr/sbin/c
+root      6426     1  0 15:08 ?        00:00:00 /usr/sbin/c
+manny     6520  6011  1 15:10 ?        00:00:36 /usr/lib/fi
+manny     6691  6011  0 15:16 ?        00:00:07 /usr/lib/fi
+root      6810     2  0 15:18 ?        00:00:01 [kworker/u8
+root      6828     2  0 15:18 ?        00:00:00 [kworker/2:
+root      6832     2  0 15:18 ?        00:00:00 [loop14]
+manny     7020  6011  2 15:21 ?        00:01:08 /usr/lib/fi
+manny     7218  3460  0 15:26 pts/1    00:00:03 /home/manny
+root      7324     2  0 15:26 ?        00:00:00 [kworker/2:
+root      7364     2  0 15:26 ?        00:00:01 [kworker/u8
+manny     7365  7218  0 15:26 ?        00:00:00 /home/manny
+manny     7579  7218  0 15:29 ?        00:00:01 /home/manny
+manny     7589  7579  0 15:29 pts/3    00:00:00 /bin/bash -
+manny     7608  7579  1 15:29 ?        00:00:22 /usr/lib/jv
+manny     7706  7218  0 15:31 ?        00:00:00 /home/manny
+manny     7716  7706  0 15:31 pts/0    00:00:00 /bin/bash -
+manny     7755  3360  0 15:32 pts/2    00:00:00 bash
+manny     7774  6011 10 15:32 ?        00:02:54 /usr/lib/fi
+root      7865     2  0 15:35 ?        00:00:00 [kworker/u8
+manny     7922  3360  0 15:39 pts/5    00:00:00 bash
+root      8077     2  0 15:49 ?        00:00:00 [kworker/1:
+manny     8097  7755  0 15:51 pts/2    00:00:00 script hw1.
+manny     8098  8097  0 15:51 pts/4    00:00:00 bash -i
+root      8404     2  0 15:57 ?        00:00:00 [kworker/1:
+manny     8439   875  0 15:57 ?        00:00:00 /usr/lib/sp
+manny     8442   875  0 15:57 ?        00:00:00 /usr/lib/sp
+manny     8445   875  0 15:57 ?        00:00:00 /usr/lib/sp
+manny     8452   875  0 15:57 ?        00:00:00 /usr/bin/sp
+root      8506     2  0 15:59 ?        00:00:00 [kworker/u8
+manny     8545  8098  0 16:01 pts/4    00:00:00 ps -ef
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ cat /etc/passwd | grep -w manny
+[01;31m[Kmanny[m[K:x:1000:1000:Manny,,,:/home/[01;31m[Kmanny[m[K:/bin/bash
+]0;manny@manny-MacBookPro: ~/Desktop/TechField/Assignments/Programming[01;32mmanny@manny-MacBookPro[00m:[01;34m~/Desktop/TechField/Assignments/Progr
+ramming[00m$ exit
+exit
+
+Script done on 2018-10-09 16:05:34-0400
